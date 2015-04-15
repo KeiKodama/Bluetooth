@@ -15,6 +15,8 @@
 		AD700DEB1ADDF92B0088C4E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD700DEA1ADDF92B0088C4E4 /* Images.xcassets */; };
 		AD700DEE1ADDF92B0088C4E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD700DEC1ADDF92B0088C4E4 /* LaunchScreen.xib */; };
 		AD700DFA1ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DF91ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m */; };
+		AD700E3C1ADE2FF30088C4E4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700E391ADE2FF30088C4E4 /* DetailViewController.m */; };
+		AD700E3D1ADE2FF30088C4E4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700E3B1ADE2FF30088C4E4 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		AD700DF31ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothBarcodeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD700DF81ADDF92B0088C4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD700DF91ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothBarcodeAppTests.m; sourceTree = "<group>"; };
+		AD700E381ADE2FF30088C4E4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AD700E391ADE2FF30088C4E4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AD700E3A1ADE2FF30088C4E4 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		AD700E3B1ADE2FF30088C4E4 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 		AD700DD91ADDF92B0088C4E4 /* BluetoothBarcodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD700E381ADE2FF30088C4E4 /* DetailViewController.h */,
+				AD700E391ADE2FF30088C4E4 /* DetailViewController.m */,
+				AD700E3A1ADE2FF30088C4E4 /* MasterViewController.h */,
+				AD700E3B1ADE2FF30088C4E4 /* MasterViewController.m */,
 				AD700DDE1ADDF92B0088C4E4 /* AppDelegate.h */,
 				AD700DDF1ADDF92B0088C4E4 /* AppDelegate.m */,
 				AD700DE11ADDF92B0088C4E4 /* FirstViewController.h */,
@@ -224,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD700E3C1ADE2FF30088C4E4 /* DetailViewController.m in Sources */,
 				AD700DE61ADDF92B0088C4E4 /* SecondViewController.m in Sources */,
 				AD700DE01ADDF92B0088C4E4 /* AppDelegate.m in Sources */,
 				AD700DE31ADDF92B0088C4E4 /* FirstViewController.m in Sources */,
+				AD700E3D1ADE2FF30088C4E4 /* MasterViewController.m in Sources */,
 				AD700DDD1ADDF92B0088C4E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
