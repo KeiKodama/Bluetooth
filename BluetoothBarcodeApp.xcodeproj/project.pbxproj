@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD700DDD1ADDF92B0088C4E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DDC1ADDF92B0088C4E4 /* main.m */; };
+		AD700DE01ADDF92B0088C4E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DDF1ADDF92B0088C4E4 /* AppDelegate.m */; };
+		AD700DE31ADDF92B0088C4E4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DE21ADDF92B0088C4E4 /* FirstViewController.m */; };
+		AD700DE61ADDF92B0088C4E4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DE51ADDF92B0088C4E4 /* SecondViewController.m */; };
+		AD700DE91ADDF92B0088C4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD700DE71ADDF92B0088C4E4 /* Main.storyboard */; };
+		AD700DEB1ADDF92B0088C4E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD700DEA1ADDF92B0088C4E4 /* Images.xcassets */; };
+		AD700DEE1ADDF92B0088C4E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD700DEC1ADDF92B0088C4E4 /* LaunchScreen.xib */; };
+		AD700DFA1ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DF91ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD700DF41ADDF92B0088C4E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD700DCF1ADDF92B0088C4E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD700DD61ADDF92B0088C4E4;
+			remoteInfo = BluetoothBarcodeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD700DD71ADDF92B0088C4E4 /* BluetoothBarcodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothBarcodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD700DDB1ADDF92B0088C4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD700DDC1ADDF92B0088C4E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD700DDE1ADDF92B0088C4E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD700DDF1ADDF92B0088C4E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD700DE11ADDF92B0088C4E4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		AD700DE21ADDF92B0088C4E4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		AD700DE41ADDF92B0088C4E4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AD700DE51ADDF92B0088C4E4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AD700DE81ADDF92B0088C4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD700DEA1ADDF92B0088C4E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD700DED1ADDF92B0088C4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD700DF31ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothBarcodeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD700DF81ADDF92B0088C4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD700DF91ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothBarcodeAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD700DD41ADDF92B0088C4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD700DF01ADDF92B0088C4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD700DCE1ADDF92B0088C4E4 = {
+			isa = PBXGroup;
+			children = (
+				AD700DD91ADDF92B0088C4E4 /* BluetoothBarcodeApp */,
+				AD700DF61ADDF92B0088C4E4 /* BluetoothBarcodeAppTests */,
+				AD700DD81ADDF92B0088C4E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD700DD81ADDF92B0088C4E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD700DD71ADDF92B0088C4E4 /* BluetoothBarcodeApp.app */,
+				AD700DF31ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD700DD91ADDF92B0088C4E4 /* BluetoothBarcodeApp */ = {
+			isa = PBXGroup;
+			children = (
+				AD700DDE1ADDF92B0088C4E4 /* AppDelegate.h */,
+				AD700DDF1ADDF92B0088C4E4 /* AppDelegate.m */,
+				AD700DE11ADDF92B0088C4E4 /* FirstViewController.h */,
+				AD700DE21ADDF92B0088C4E4 /* FirstViewController.m */,
+				AD700DE41ADDF92B0088C4E4 /* SecondViewController.h */,
+				AD700DE51ADDF92B0088C4E4 /* SecondViewController.m */,
+				AD700DE71ADDF92B0088C4E4 /* Main.storyboard */,
+				AD700DEA1ADDF92B0088C4E4 /* Images.xcassets */,
+				AD700DEC1ADDF92B0088C4E4 /* LaunchScreen.xib */,
+				AD700DDA1ADDF92B0088C4E4 /* Supporting Files */,
+			);
+			path = BluetoothBarcodeApp;
+			sourceTree = "<group>";
+		};
+		AD700DDA1ADDF92B0088C4E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD700DDB1ADDF92B0088C4E4 /* Info.plist */,
+				AD700DDC1ADDF92B0088C4E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD700DF61ADDF92B0088C4E4 /* BluetoothBarcodeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD700DF91ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m */,
+				AD700DF71ADDF92B0088C4E4 /* Supporting Files */,
+			);
+			path = BluetoothBarcodeAppTests;
+			sourceTree = "<group>";
+		};
+		AD700DF71ADDF92B0088C4E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD700DF81ADDF92B0088C4E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD700DD61ADDF92B0088C4E4 /* BluetoothBarcodeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD700DFD1ADDF92B0088C4E4 /* Build configuration list for PBXNativeTarget "BluetoothBarcodeApp" */;
+			buildPhases = (
+				AD700DD31ADDF92B0088C4E4 /* Sources */,
+				AD700DD41ADDF92B0088C4E4 /* Frameworks */,
+				AD700DD51ADDF92B0088C4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothBarcodeApp;
+			productName = BluetoothBarcodeApp;
+			productReference = AD700DD71ADDF92B0088C4E4 /* BluetoothBarcodeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD700DF21ADDF92B0088C4E4 /* BluetoothBarcodeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD700E001ADDF92B0088C4E4 /* Build configuration list for PBXNativeTarget "BluetoothBarcodeAppTests" */;
+			buildPhases = (
+				AD700DEF1ADDF92B0088C4E4 /* Sources */,
+				AD700DF01ADDF92B0088C4E4 /* Frameworks */,
+				AD700DF11ADDF92B0088C4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD700DF51ADDF92B0088C4E4 /* PBXTargetDependency */,
+			);
+			name = BluetoothBarcodeAppTests;
+			productName = BluetoothBarcodeAppTests;
+			productReference = AD700DF31ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD700DCF1ADDF92B0088C4E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = kccs;
+				TargetAttributes = {
+					AD700DD61ADDF92B0088C4E4 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					AD700DF21ADDF92B0088C4E4 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = AD700DD61ADDF92B0088C4E4;
+					};
+				};
+			};
+			buildConfigurationList = AD700DD21ADDF92B0088C4E4 /* Build configuration list for PBXProject "BluetoothBarcodeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD700DCE1ADDF92B0088C4E4;
+			productRefGroup = AD700DD81ADDF92B0088C4E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD700DD61ADDF92B0088C4E4 /* BluetoothBarcodeApp */,
+				AD700DF21ADDF92B0088C4E4 /* BluetoothBarcodeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD700DD51ADDF92B0088C4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD700DE91ADDF92B0088C4E4 /* Main.storyboard in Resources */,
+				AD700DEE1ADDF92B0088C4E4 /* LaunchScreen.xib in Resources */,
+				AD700DEB1ADDF92B0088C4E4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD700DF11ADDF92B0088C4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD700DD31ADDF92B0088C4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD700DE61ADDF92B0088C4E4 /* SecondViewController.m in Sources */,
+				AD700DE01ADDF92B0088C4E4 /* AppDelegate.m in Sources */,
+				AD700DE31ADDF92B0088C4E4 /* FirstViewController.m in Sources */,
+				AD700DDD1ADDF92B0088C4E4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD700DEF1ADDF92B0088C4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD700DFA1ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD700DF51ADDF92B0088C4E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD700DD61ADDF92B0088C4E4 /* BluetoothBarcodeApp */;
+			targetProxy = AD700DF41ADDF92B0088C4E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD700DE71ADDF92B0088C4E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD700DE81ADDF92B0088C4E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD700DEC1ADDF92B0088C4E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD700DED1ADDF92B0088C4E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD700DFB1ADDF92B0088C4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD700DFC1ADDF92B0088C4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD700DFE1ADDF92B0088C4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BluetoothBarcodeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD700DFF1ADDF92B0088C4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BluetoothBarcodeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD700E011ADDF92B0088C4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BluetoothBarcodeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothBarcodeApp.app/BluetoothBarcodeApp";
+			};
+			name = Debug;
+		};
+		AD700E021ADDF92B0088C4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BluetoothBarcodeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothBarcodeApp.app/BluetoothBarcodeApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD700DD21ADDF92B0088C4E4 /* Build configuration list for PBXProject "BluetoothBarcodeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD700DFB1ADDF92B0088C4E4 /* Debug */,
+				AD700DFC1ADDF92B0088C4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD700DFD1ADDF92B0088C4E4 /* Build configuration list for PBXNativeTarget "BluetoothBarcodeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD700DFE1ADDF92B0088C4E4 /* Debug */,
+				AD700DFF1ADDF92B0088C4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD700E001ADDF92B0088C4E4 /* Build configuration list for PBXNativeTarget "BluetoothBarcodeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD700E011ADDF92B0088C4E4 /* Debug */,
+				AD700E021ADDF92B0088C4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD700DCF1ADDF92B0088C4E4 /* Project object */;
+}
