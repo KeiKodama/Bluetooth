@@ -17,6 +17,12 @@
 		AD700DFA1ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DF91ADDF92B0088C4E4 /* BluetoothBarcodeAppTests.m */; };
 		AD700E3C1ADE2FF30088C4E4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700E391ADE2FF30088C4E4 /* DetailViewController.m */; };
 		AD700E3D1ADE2FF30088C4E4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700E3B1ADE2FF30088C4E4 /* MasterViewController.m */; };
+		AD950A8E1ADE8832000E7F06 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AD950A841ADE8832000E7F06 /* FMDatabase.m */; };
+		AD950A8F1ADE8832000E7F06 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD950A861ADE8832000E7F06 /* FMDatabaseAdditions.m */; };
+		AD950A901ADE8832000E7F06 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD950A881ADE8832000E7F06 /* FMDatabasePool.m */; };
+		AD950A911ADE8832000E7F06 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD950A8A1ADE8832000E7F06 /* FMDatabaseQueue.m */; };
+		AD950A921ADE8832000E7F06 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AD950A8D1ADE8832000E7F06 /* FMResultSet.m */; };
+		AD950A941ADE8946000E7F06 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD950A931ADE8946000E7F06 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,18 @@
 		AD700E391ADE2FF30088C4E4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AD700E3A1ADE2FF30088C4E4 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		AD700E3B1ADE2FF30088C4E4 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		AD950A831ADE8832000E7F06 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AD950A841ADE8832000E7F06 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AD950A851ADE8832000E7F06 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AD950A861ADE8832000E7F06 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AD950A871ADE8832000E7F06 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AD950A881ADE8832000E7F06 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AD950A891ADE8832000E7F06 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AD950A8A1ADE8832000E7F06 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AD950A8B1ADE8832000E7F06 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		AD950A8C1ADE8832000E7F06 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AD950A8D1ADE8832000E7F06 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		AD950A931ADE8946000E7F06 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD950A941ADE8946000E7F06 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +91,7 @@
 		AD700DCE1ADDF92B0088C4E4 = {
 			isa = PBXGroup;
 			children = (
+				AD950A931ADE8946000E7F06 /* libsqlite3.0.dylib */,
 				AD700DD91ADDF92B0088C4E4 /* BluetoothBarcodeApp */,
 				AD700DF61ADDF92B0088C4E4 /* BluetoothBarcodeAppTests */,
 				AD700DD81ADDF92B0088C4E4 /* Products */,
@@ -90,6 +110,7 @@
 		AD700DD91ADDF92B0088C4E4 /* BluetoothBarcodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD950A821ADE87EE000E7F06 /* FMDB */,
 				AD700E381ADE2FF30088C4E4 /* DetailViewController.h */,
 				AD700E391ADE2FF30088C4E4 /* DetailViewController.m */,
 				AD700E3A1ADE2FF30088C4E4 /* MasterViewController.h */,
@@ -132,6 +153,24 @@
 				AD700DF81ADDF92B0088C4E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD950A821ADE87EE000E7F06 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				AD950A831ADE8832000E7F06 /* FMDatabase.h */,
+				AD950A841ADE8832000E7F06 /* FMDatabase.m */,
+				AD950A851ADE8832000E7F06 /* FMDatabaseAdditions.h */,
+				AD950A861ADE8832000E7F06 /* FMDatabaseAdditions.m */,
+				AD950A871ADE8832000E7F06 /* FMDatabasePool.h */,
+				AD950A881ADE8832000E7F06 /* FMDatabasePool.m */,
+				AD950A891ADE8832000E7F06 /* FMDatabaseQueue.h */,
+				AD950A8A1ADE8832000E7F06 /* FMDatabaseQueue.m */,
+				AD950A8B1ADE8832000E7F06 /* FMDB.h */,
+				AD950A8C1ADE8832000E7F06 /* FMResultSet.h */,
+				AD950A8D1ADE8832000E7F06 /* FMResultSet.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +276,14 @@
 				AD700E3C1ADE2FF30088C4E4 /* DetailViewController.m in Sources */,
 				AD700DE61ADDF92B0088C4E4 /* SecondViewController.m in Sources */,
 				AD700DE01ADDF92B0088C4E4 /* AppDelegate.m in Sources */,
+				AD950A8E1ADE8832000E7F06 /* FMDatabase.m in Sources */,
+				AD950A901ADE8832000E7F06 /* FMDatabasePool.m in Sources */,
+				AD950A911ADE8832000E7F06 /* FMDatabaseQueue.m in Sources */,
 				AD700DE31ADDF92B0088C4E4 /* FirstViewController.m in Sources */,
 				AD700E3D1ADE2FF30088C4E4 /* MasterViewController.m in Sources */,
+				AD950A921ADE8832000E7F06 /* FMResultSet.m in Sources */,
 				AD700DDD1ADDF92B0088C4E4 /* main.m in Sources */,
+				AD950A8F1ADE8832000E7F06 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +478,7 @@
 				AD700DFF1ADDF92B0088C4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD700E001ADDF92B0088C4E4 /* Build configuration list for PBXNativeTarget "BluetoothBarcodeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +487,7 @@
 				AD700E021ADDF92B0088C4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

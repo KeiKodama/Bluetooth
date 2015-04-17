@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "FMDatabase.h"
 
 @interface MasterViewController ()
 
@@ -27,6 +28,11 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    if (!self.objects) {
+        self.objects = [[NSMutableArray alloc] init];
+    }
+    [self loadBarcodeInfo];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,12 +41,37 @@
 }
 
 - (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
+//    if (!self.objects) {
+//        self.objects = [[NSMutableArray alloc] init];
+//    }
+//    [self.objects insertObject:[NSDate date] atIndex:0];
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    DetailViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void) loadBarcodeInfo {
+    NSString *sql = @"select item from barcodedb";
+    FMDatabase *db = [self getDbObject];
+    [db open];
+    FMResultSet *rs = [db executeQuery:sql];
+    while ([rs next]) {
+        NSString *item = [rs stringForColumn:@"item"];
+        NSLog(@"item:%@", item);
+        [self.objects insertObject:item atIndex:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+}
+
+- (FMDatabase *) getDbObject {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *dir = [paths objectAtIndex:0];
+    NSString *db_path = [dir stringByAppendingPathComponent:@"barcode.sqlite"];
+    FMDatabase* db = [FMDatabase databaseWithPath:db_path];
+    return db;
 }
 
 #pragma mark - Segues
