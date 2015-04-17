@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "InputComponent.h"
 
 @interface SecondViewController ()
 

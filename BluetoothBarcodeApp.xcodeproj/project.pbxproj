@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6E89C61AE12A49003623AF /* InputComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6E89C51AE12A49003623AF /* InputComponent.m */; };
 		AD700DDD1ADDF92B0088C4E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DDC1ADDF92B0088C4E4 /* main.m */; };
 		AD700DE01ADDF92B0088C4E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DDF1ADDF92B0088C4E4 /* AppDelegate.m */; };
 		AD700DE31ADDF92B0088C4E4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD700DE21ADDF92B0088C4E4 /* FirstViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD6E89C41AE12A49003623AF /* InputComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputComponent.h; sourceTree = "<group>"; };
+		AD6E89C51AE12A49003623AF /* InputComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputComponent.m; sourceTree = "<group>"; };
 		AD700DD71ADDF92B0088C4E4 /* BluetoothBarcodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothBarcodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD700DDB1ADDF92B0088C4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD700DDC1ADDF92B0088C4E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				AD700DEA1ADDF92B0088C4E4 /* Images.xcassets */,
 				AD700DEC1ADDF92B0088C4E4 /* LaunchScreen.xib */,
 				AD700DDA1ADDF92B0088C4E4 /* Supporting Files */,
+				AD6E89C41AE12A49003623AF /* InputComponent.h */,
+				AD6E89C51AE12A49003623AF /* InputComponent.m */,
 			);
 			path = BluetoothBarcodeApp;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				AD950A8E1ADE8832000E7F06 /* FMDatabase.m in Sources */,
 				AD950A901ADE8832000E7F06 /* FMDatabasePool.m in Sources */,
 				AD950A911ADE8832000E7F06 /* FMDatabaseQueue.m in Sources */,
+				AD6E89C61AE12A49003623AF /* InputComponent.m in Sources */,
 				AD700DE31ADDF92B0088C4E4 /* FirstViewController.m in Sources */,
 				AD700E3D1ADE2FF30088C4E4 /* MasterViewController.m in Sources */,
 				AD950A921ADE8832000E7F06 /* FMResultSet.m in Sources */,
