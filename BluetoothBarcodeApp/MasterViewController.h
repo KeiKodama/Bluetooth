@@ -10,6 +10,7 @@
 
 @interface MasterViewController : UITableViewController
 
+-(void)addItemToTable:(NSString *)item;
 
 @end
 

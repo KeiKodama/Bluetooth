@@ -51,7 +51,7 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 
-- (void) loadBarcodeInfo {
+- (void)loadBarcodeInfo {
     NSString *sql = @"select item from barcodedb";
     FMDatabase *db = [self getDbObject];
     [db open];
@@ -66,12 +66,26 @@
     
 }
 
-- (FMDatabase *) getDbObject {
+- (FMDatabase *)getDbObject {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *dir = [paths objectAtIndex:0];
     NSString *db_path = [dir stringByAppendingPathComponent:@"barcode.sqlite"];
     FMDatabase* db = [FMDatabase databaseWithPath:db_path];
     return db;
+}
+
+- (void)addItemToTable:(NSString *)item {
+    [self.objects insertObject:item atIndex:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)removeItemFromDb:(NSString *)item {
+    NSString *sql = @"delete from barcodedb where item = ?";
+    FMDatabase *db = [self getDbObject];
+    [db open];
+    [db executeUpdate:sql, item];
+    [db close];
 }
 
 #pragma mark - Segues
@@ -109,6 +123,9 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        NSString *item = cell.textLabel.text;
+        [self removeItemFromDb:item];
         [self.objects removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {

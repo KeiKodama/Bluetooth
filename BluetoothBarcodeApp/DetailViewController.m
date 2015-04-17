@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "FMDatabase.h"
+#import "MasterViewController.h"
 
 @interface DetailViewController ()
 
@@ -80,7 +81,8 @@
     }
     
     [self insertItemInfoWithBarcode:barcode item:item price:price];
-    
+    MasterViewController *controller = [self.navigationController.viewControllers objectAtIndex:0];
+    [controller addItemToTable:item];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
