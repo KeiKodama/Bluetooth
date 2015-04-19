@@ -82,7 +82,6 @@
     count++;
     CustomView *customView = [[CustomView alloc] init];
     customView.frame = CGRectMake(0, 100*count, 600, 100);
-    customView.backgroundImageView.backgroundColor = [UIColor blueColor];
     customView.tag = count;
     [self.view addSubview:customView];
 }
@@ -120,7 +119,9 @@
     cv.barcodeField.text = code;
     cv.itemField.text = item;
     cv.priceField.text = price;
-    
+    cv.countField.text = @"1";
+    NSInteger sum = (cv.priceField.text.integerValue) * (cv.countField.text.integerValue);
+    cv.sumField.text = [NSString stringWithFormat:@"%d", sum];
 }
 
 @end
