@@ -7,9 +7,11 @@
 //
 
 #import "SecondViewController.h"
-#import "InputComponent.h"
+#import "CustomView.h"
 
-@interface SecondViewController ()
+@interface SecondViewController () {
+    int count;
+}
 
 @end
 
@@ -18,11 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)tappedButton:(id)sender {
+    count++;
+    CustomView *customView = [[CustomView alloc] init];
+    customView.frame = CGRectMake(10,100*count,100,100);
+    customView.backgroundImageView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:customView];
+    
 }
 
 @end
