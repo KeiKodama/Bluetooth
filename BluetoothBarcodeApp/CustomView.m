@@ -20,8 +20,6 @@
         self = [nib instantiateWithOwner:nil options:nil][0];
         
         // initialize here
-        self.titleLabel.textColor = [UIColor whiteColor];
-        self.titleLabel.text = @"I was made of Nib!";
     }
     return self;
 }

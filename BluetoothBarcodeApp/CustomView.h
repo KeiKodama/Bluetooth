@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomView : UIView
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UITextField *barcodeField;
+@property (weak, nonatomic) IBOutlet UITextField *itemField;
+@property (weak, nonatomic) IBOutlet UITextField *priceField;
+@property (weak, nonatomic) IBOutlet UITextField *countField;
+@property (weak, nonatomic) IBOutlet UITextField *sumField;
 @end

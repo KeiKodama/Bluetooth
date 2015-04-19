@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self addInputComponent];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,10 +32,17 @@
 - (IBAction)tappedButton:(id)sender {
     count++;
     CustomView *customView = [[CustomView alloc] init];
-    customView.frame = CGRectMake(10,100*count,100,100);
+    customView.frame = CGRectMake(0, 100 + 100*count, 600, 100);
     customView.backgroundImageView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:customView];
     
+}
+
+- (void)addInputComponent {
+    CustomView *customView = [[CustomView alloc] init];
+    customView.frame = CGRectMake(0, 100, 600, 100);
+    customView.backgroundImageView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:customView];
 }
 
 @end
