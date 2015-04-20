@@ -81,7 +81,7 @@
 - (void)addInputComponent {
     count++;
     CustomView *customView = [[CustomView alloc] init];
-    customView.frame = CGRectMake(0, 100*count, 600, 100);
+    customView.frame = CGRectMake(0, 20+60*count, 600, 60);
     customView.tag = count;
     [self.view addSubview:customView];
 }

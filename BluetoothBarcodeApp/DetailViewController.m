@@ -25,27 +25,40 @@
 - (void)setDetailItem:(id)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-            
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView {
-    // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    [self configureView];
     
     [self createDb];
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(createItemInfo:)];
     self.navigationItem.rightBarButtonItem = doneButton;
+    
+    if (self.detailItem) {
+        
+        NSString *item = (NSString *)self.detailItem;
+    
+        NSString *code;
+        NSString *price;
+        NSString *sql = @"select * from barcodedb where item = ?";
+    
+        FMDatabase *db = [self getDbObject];
+        [db open];
+        FMResultSet *rs = [db executeQuery:sql, item];
+        while ([rs next]) {
+            code = [rs stringForColumn:@"barcode"];
+            price = [rs stringForColumn:@"price"];
+        }
+        [db close];
+    
+        self.barcodeField.text = code;
+        self.barcodeField.enabled = NO;
+        self.itemField.text = item;
+        self.itemField.enabled = NO;
+        self.priceField.text = price;
+        self.priceField.enabled = NO;
+    }
 }
 
 - (FMDatabase *) getDbObject {
